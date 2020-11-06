@@ -1,0 +1,7 @@
+Se ha publicado el dataset en formato CSV en Zenodo y el DOI obtenido se detalla a
+continuación:
+
+10.5281/zenodo.4244834
+
+La URL para acceder al dataset publicado es la siguiente
+http://doi.org/10.5281/zenodo.4244834
