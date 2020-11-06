@@ -1,18 +1,15 @@
 # This file contains project's main classes
-
 import logging
 import os
-
 import scrapy
+
 from scrapy.loader import ItemLoader
 from scrapy.loader.processors import Compose, Join, MapCompose, TakeFirst
 from scrapy.utils.request import request_fingerprint
 from scrapy.extensions.httpcache import FilesystemCacheStorage
-
 from .functions import parse_int, parse_float, format_date, is_recommended, strip_snr
 
-
-# Class for cleaning HTML white spaces, tabs and end of lines 
+# Class for cleaning HTML white spaces, tabs and end of lines
 class CleanSpaces:
     def __init__(self, chars=' \r\t\n'):
         self.chars = chars
@@ -20,12 +17,11 @@ class CleanSpaces:
     def __call__(self, value):
         try:
             return value.strip(self.chars)
-        except: 
+        except:
             return value
 
 # Scrapy item class for reviews, it defines the fields to be extracted
 class Review(scrapy.Item):
-    
     product_id = scrapy.Field()
     product_name = scrapy.Field()
     page = scrapy.Field()

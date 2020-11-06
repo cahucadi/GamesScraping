@@ -1,15 +1,12 @@
-# This file contains project's main helpers functions (format, parsing, clean) 
-
+# This file contains project's main helpers functions (format, parsing, clean)
 from w3lib.url import url_query_cleaner
 from datetime import datetime, date
 import logging
 
 logger = logging.getLogger(__name__)
 
-
 def is_recommended(x):
     return True if x == 'Recommended' else False
-
 
 def format_date(x):
 
@@ -34,19 +31,17 @@ def format_date(x):
 
     return x
 
-
 def parse_float(x:str):
     x = x.replace(',', '')
     try:
         return float(x)
-    except:  
+    except:
         return x
-
 
 def parse_int(x:str):
     try:
         return int(parse_float(x))
-    except: 
+    except:
         return x
 
 
