@@ -56,7 +56,7 @@ Most important files:
   * `functions.py`: This file contains scrapy default configuration
 * `game_scraping/`
   * `review_spider.py`: This file contains project's main spider from scrapy.Spider class
-  * `util_functions.py`: # This file contains spider needed functions
+  * `util_functions.py`: This file contains spider needed functions
 
 ## DOI File
 
